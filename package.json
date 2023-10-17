@@ -1,5 +1,5 @@
 {
-  "name": "amazona",
+  "name": "eStop",
   "version": "1.0.0",
   "description": "# Lessons",
   "main": "index.js",
@@ -10,12 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/mern-amazona.git"
+    "url": "git+https://github.com/rkhan794/eStop.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/basir/mern-amazona/issues"
-  },
-  "homepage": "https://github.com/basir/mern-amazona#readme"
+  "homepage": "https://github.com/rkhan794/eStop#readme"
 }
