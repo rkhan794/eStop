@@ -16,7 +16,6 @@ import { getError } from '../utils';
 import { Store } from '../Store';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import { toast } from 'react-toastify';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'REFRESH_PRODUCT':
@@ -75,7 +74,7 @@ function ProductScreen() {
     const quantity = existItem ? existItem.quantity + 1 : 1;
     const { data } = await axios.get(`/api/products/${product._id}`);
     if (data.countInStock < quantity) {
-      window.alert('Sorry. Product is out of stock');
+      window.alert('Sorry! Product is out of stock');
       return;
     }
     ctxDispatch({
@@ -117,6 +116,7 @@ function ProductScreen() {
       dispatch({ type: 'CREATE_FAIL' });
     }
   };
+  
   return loading ? (
     <LoadingBox />
   ) : error ? (

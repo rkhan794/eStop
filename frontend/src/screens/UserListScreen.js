@@ -8,7 +8,6 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
 import { getError } from '../utils';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -87,6 +86,7 @@ export default function UserListScreen() {
       }
     }
   };
+  
   return (
     <div>
       <Helmet>

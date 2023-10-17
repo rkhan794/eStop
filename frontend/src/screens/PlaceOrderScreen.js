@@ -12,7 +12,6 @@ import { getError } from '../utils';
 import { Store } from '../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
 import LoadingBox from '../components/LoadingBox';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'CREATE_REQUEST':
@@ -35,7 +34,6 @@ export default function PlaceOrderScreen() {
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
-
   const round2 = (num) => Math.round(num * 100 + Number.EPSILON) / 100; // 123.2345 => 123.23
   cart.itemsPrice = round2(
     cart.cartItems.reduce((a, c) => a + c.quantity * c.price, 0)
@@ -81,6 +79,7 @@ export default function PlaceOrderScreen() {
     }
   }, [cart, navigate]);
 
+  
   return (
     <div>
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>

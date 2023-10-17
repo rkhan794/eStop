@@ -8,7 +8,6 @@ import { useContext, useEffect, useState } from 'react';
 import { Store } from '../Store';
 import { toast } from 'react-toastify';
 import { getError } from '../utils';
-
 export default function SignupScreen() {
   const navigate = useNavigate();
   const { search } = useLocation();
@@ -19,7 +18,6 @@ export default function SignupScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { userInfo } = state;
   const submitHandler = async (e) => {
@@ -47,6 +45,7 @@ export default function SignupScreen() {
       navigate(redirect);
     }
   }, [navigate, redirect, userInfo]);
+
 
   return (
     <Container className="small-container">

@@ -1,4 +1,5 @@
 function Rating(props) {
+  
   const { rating, numReviews, caption } = props;
   return (
     <div className="rating">

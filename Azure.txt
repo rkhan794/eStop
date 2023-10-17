@@ -24,7 +24,6 @@ contains features to change the properties of our App Service, test our Web App,
 
 Step 6: Setting Up Deployment Center Click on Deployment Center on the left panel. Use GitHub to deploy your 
 web app.
-
 Since we want to deploy our We App from our GitHub profile, click on GitHub. It will ask you to sign-in to your GitHub profile. 
 Now select App Service to build a service build provider. This feature helps us to perform changes in our Web App in Azure.
  Select your Organization from which you want to deploy.

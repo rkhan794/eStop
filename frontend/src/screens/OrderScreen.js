@@ -14,7 +14,6 @@ import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
 import { getError } from '../utils';
 import { toast } from 'react-toastify';
-
 function reducer(state, action) {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -31,7 +30,6 @@ function reducer(state, action) {
       return { ...state, loadingPay: false };
     case 'PAY_RESET':
       return { ...state, loadingPay: false, successPay: false };
-
     case 'DELIVER_REQUEST':
       return { ...state, loadingDeliver: true };
     case 'DELIVER_SUCCESS':
@@ -48,6 +46,7 @@ function reducer(state, action) {
       return state;
   }
 }
+
 export default function OrderScreen() {
   const { state } = useContext(Store);
   const { userInfo } = state;

@@ -8,7 +8,6 @@ import { useContext, useEffect, useState } from 'react';
 import { Store } from '../Store';
 import { toast } from 'react-toastify';
 import { getError } from '../utils';
-
 export default function SigninScreen() {
   const navigate = useNavigate();
   const { search } = useLocation();
@@ -40,6 +39,7 @@ export default function SigninScreen() {
       navigate(redirect);
     }
   }, [navigate, redirect, userInfo]);
+
 
   return (
     <Container className="small-container">

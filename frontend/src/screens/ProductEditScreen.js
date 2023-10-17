@@ -11,7 +11,6 @@ import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Button from 'react-bootstrap/Button';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -41,6 +40,7 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 export default function ProductEditScreen() {
   const navigate = useNavigate();
   const params = useParams(); // /product/:id
@@ -153,6 +153,7 @@ export default function ProductEditScreen() {
     setImages(images.filter((x) => x !== fileName));
     toast.success('Image removed successfully. click Update to apply it');
   };
+  
   return (
     <Container className="small-container">
       <Helmet>

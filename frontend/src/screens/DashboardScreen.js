@@ -8,7 +8,6 @@ import MessageBox from '../components/MessageBox';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -25,6 +24,7 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 export default function DashboardScreen() {
   const [{ loading, summary, error }, dispatch] = useReducer(reducer, {
     loading: true,

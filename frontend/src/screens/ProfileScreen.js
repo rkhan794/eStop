@@ -6,7 +6,6 @@ import { Store } from '../Store';
 import { toast } from 'react-toastify';
 import { getError } from '../utils';
 import axios from 'axios';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE_REQUEST':
@@ -60,6 +59,7 @@ export default function ProfileScreen() {
       toast.error(getError(err));
     }
   };
+
 
   return (
     <div className="container small-container">

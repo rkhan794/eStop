@@ -56,8 +56,6 @@ main {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
 }
-
-/* sidebar */
 .navbar-brand {
   font-weight: bold;
 }
@@ -83,7 +81,6 @@ main {
   font-weight: bold;
 }
 
-/* Map */
 
 .full-box {
   height: 100vh;
@@ -103,7 +100,6 @@ main {
 .full-box .mt-3 {
   margin-top: 0 !important;
 }
-
 .map-input-box {
   box-sizing: border-box;
   position: absolute;

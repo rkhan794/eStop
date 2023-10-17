@@ -1,7 +1,6 @@
 {
   "name": "eStop",
   "version": "1.0.0",
-  "description": "# Lessons",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",

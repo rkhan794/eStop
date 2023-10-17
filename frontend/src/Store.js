@@ -1,7 +1,5 @@
 import { createContext, useReducer } from 'react';
-
 export const Store = createContext();
-
 const initialState = {
   fullBox: false,
   userInfo: localStorage.getItem('userInfo')
@@ -91,7 +89,6 @@ function reducer(state, action) {
       return state;
   }
 }
-
 export function StoreProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };

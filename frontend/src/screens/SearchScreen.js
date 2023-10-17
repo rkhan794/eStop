@@ -12,7 +12,6 @@ import MessageBox from '../components/MessageBox';
 import Button from 'react-bootstrap/Button';
 import Product from '../components/Product';
 import LinkContainer from 'react-router-bootstrap/LinkContainer';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -48,7 +47,6 @@ const prices = [
     value: '201-1000',
   },
 ];
-
 export const ratings = [
   {
     name: '4stars & up',
@@ -129,6 +127,7 @@ export default function SearchScreen() {
       skipPathname ? '' : '/search?'
     }category=${filterCategory}&query=${filterQuery}&price=${filterPrice}&rating=${filterRating}&order=${sortOrder}&page=${filterPage}`;
   };
+  
   return (
     <div>
       <Helmet>

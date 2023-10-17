@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 import { Store } from '../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
-
 export default function ShippingAddressScreen() {
   const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -56,6 +55,7 @@ export default function ShippingAddressScreen() {
   useEffect(() => {
     ctxDispatch({ type: 'SET_FULLBOX_OFF' });
   }, [ctxDispatch, fullBox]);
+
 
   return (
     <div>
